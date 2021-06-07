@@ -1,3 +1,16 @@
-h1{
-  background: cadetblue;
+
+ul {
+  border-style: solid;
+  background: blanchedalmond;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+
+button {
+  background: coral;
+  border-radius: 5px;
 }
