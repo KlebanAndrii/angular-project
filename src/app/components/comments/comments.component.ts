@@ -4,6 +4,7 @@ import {ActivatedRoute} from "@angular/router";
 
 
 
+
 @Component({
   selector: 'app-comments',
   templateUrl: './comments.component.html',
@@ -12,7 +13,7 @@ import {ActivatedRoute} from "@angular/router";
 export class CommentsComponent implements OnInit {
 
 
-comments = []
+comments = [];
 
   constructor(private activatedRoute: ActivatedRoute) {
     this.activatedRoute.data.subscribe(value => this.comments = value.data )
