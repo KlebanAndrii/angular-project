@@ -14,6 +14,8 @@ import {DeactivateService} from "./service/deactivate.service";
 import { CommentsComponent } from './components/comments/comments.component';
 import {ResolveService} from "./service/resolve.service";
 
+
+
 let routes: Routes = [
   {path: 'users', component: UsersComponent, children: [{path: ':id', component: UserDetailsComponent}]},
   {path: 'posts', component: PostsComponent, canDeactivate: [DeactivateService]},
@@ -30,7 +32,9 @@ let routes: Routes = [
     PostComponent,
     UserDetailsComponent,
     PostDetailsComponent,
-    CommentsComponent
+    CommentsComponent,
+
+
   ],
   imports: [
     BrowserModule,

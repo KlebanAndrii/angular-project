@@ -1,9 +1,10 @@
-div{
-  border-style: solid;
+div {
   background: lightsalmon;
+  padding: 5px;
+
 }
 
-button{
+button {
   background: khaki;
 
 }

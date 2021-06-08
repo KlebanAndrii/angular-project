@@ -1,8 +1,8 @@
-div{
-  border-style: solid;
+div {
+  padding: 5px;
   background: mediumspringgreen;
 }
 
-button{
+button {
   background: lightskyblue;
 }

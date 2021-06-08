@@ -11,7 +11,10 @@ export class ResolveService implements Resolve<Observable<any[]>>{
   constructor(private httpClient: HttpClient) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> | Promise<any> | any {
+
     return this.httpClient.get<any[]>('https://jsonplaceholder.typicode.com/comments');
+
+
   }
 }
 
