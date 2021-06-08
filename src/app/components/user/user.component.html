@@ -5,3 +5,8 @@
   {{user.email}}
 </h3>
 
+<ul>
+  <h3>Posts:</h3>
+  <li *ngFor="let post of postsById">{{post.userId}} -- {{post.id}} -- {{post.title}}</li>
+</ul>
+

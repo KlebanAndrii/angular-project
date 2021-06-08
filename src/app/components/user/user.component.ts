@@ -1,5 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {User} from "../../models/User";
+import {PostService} from "../../service/post.service";
+import {Post} from "../../models/Post";
+
 
 @Component({
   selector: 'app-user',
@@ -11,10 +14,16 @@ export class UserComponent implements OnInit {
   @Input()
   user: User;
 
-  constructor() {
+  @Input()
+  posts: Post[];
+  postsById: Post[];
+
+
+  constructor(private postService: PostService) {
   }
 
   ngOnInit(): void {
+    this.postsById = this.posts.filter(el => el.userId === this.user.id)
   }
 
 }
