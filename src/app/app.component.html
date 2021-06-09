@@ -1,1 +1,8 @@
-<h1>{{greeting}}</h1>
+<div class="top">
+  <div class="butt-up">
+    <button><a [routerLink]="['users']">users</a></button>
+    <button><a [routerLink]="['posts']">posts</a></button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

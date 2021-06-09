@@ -1,0 +1,11 @@
+
+p {
+  width: 800px;
+  margin: 10px;
+
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+}

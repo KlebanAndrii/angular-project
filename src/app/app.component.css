@@ -1,3 +1,16 @@
-h1{
-  background: cadetblue;
+.top{
+  background: slateblue;
+  height: 50px;
+  margin: 10px;
+}
+
+.butt-up{
+  display: flex;
+  justify-content: center;
+
+
+}
+
+button{
+margin: 20px;
 }
