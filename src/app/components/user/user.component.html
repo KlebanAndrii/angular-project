@@ -1,0 +1,14 @@
+<div>
+  <hr>
+  {{singleUser.id}} -- {{singleUser.name}}
+  <div>
+    <button (click)="userDetails()">details from state</button>
+  </div>
+  <div>
+    <a [routerLink]="['userDetailsFromServer', singleUser.id]">details from server</a>
+  </div>
+
+</div>
+<hr>
+<button (click)="lifting()">lifting</button>
+<hr>
