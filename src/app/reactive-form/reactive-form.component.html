@@ -1,0 +1,20 @@
+<h1>reactive-form</h1>
+
+<form [formGroup]="myForm" (ngSubmit)="save()">
+
+<!--  <input type="text" formControlName="login">-->
+<!--  <input type="text" formControlName="password">-->
+
+  <div>
+    <input type="text" [formControl]="loginControl">
+    <div *ngIf="loginControl.errors?.badWord">don't do that!</div>
+  </div>
+  <br>
+  <div>
+    <input type="text" [formControl]="passwordControl">
+  </div>
+  <br>
+  <button>save</button>
+
+
+</form>

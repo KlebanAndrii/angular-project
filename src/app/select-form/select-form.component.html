@@ -1,0 +1,19 @@
+<h1>select-form</h1>
+<!--                        (change) - можна буде без кнопки буде обновляти коли стан буде змінюватись.-->
+<form [formGroup]="myForm" (ngSubmit)="save()">
+  <div>
+    <select [formControlName]="'id'">
+
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+
+
+<!--      <option [value]="u.id" *ngFor="let u of users">{{u.name}}</option>-->
+
+    </select>
+  </div>
+  <br>
+  <button>save</button>
+</form>

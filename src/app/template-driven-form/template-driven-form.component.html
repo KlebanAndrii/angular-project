@@ -1,0 +1,25 @@
+<h1>template-driven-form</h1>
+
+<form #myForm='ngForm' (ngSubmit)="submit(myForm)">
+  <div>
+    <input #lgn='ngModel' required [minlength]="3" name="login" type="text" [(ngModel)]="user.login">
+    <div *ngIf="lgn.errors?.required">required field</div>
+    <div *ngIf="lgn.errors?.minlength?.actualLength < lgn.errors?.minlength?.requiredLength">
+      actual length is - {{lgn.errors?.minlength?.actualLength}}
+      required length is - {{lgn.errors?.minlength?.requiredLength}}
+    </div>
+  </div>
+  <br>
+  <div>
+    <input required name="password" type="text" [(ngModel)]="user.password">
+    <div></div>
+  </div>
+  <br>
+  <button [class.error]="myForm.invalid">save</button>
+</form>
+
+
+<!--<button [disabled]="myForm.invalid">save</button>-->
+<!--login: FormControl-->
+<!--errors:-->
+<!--minlength: {requiredLength: 3, actualLength: 1}-->
